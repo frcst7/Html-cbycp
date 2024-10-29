@@ -35,5 +35,36 @@
         </div>
 
     </form>
+    <hr>
+    <h1>Pesanan</h1>
+    <form action="/order">
+        <div>
+            <label for="radio">Baju</label>
+            <input type="radio" name="radio" value="baju" id="radio" name="radio">
+            <label for="radio">Kaos</label>
+            <input type="radio" name="radio" value="kaos" id="radio" name="radio">
+            <label for="radio">Kemeja</label>
+            <input type="radio" name="radio" value="kemeja" checked id="radio" name="radio">
+        </div>
+        <div>
+            <label for="ukuran">Ukuran</label>
+            <select name="ukuran" id="ukuran">
+                <option value="S">S</option>
+                <option value="M" selected >M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+        </div>
+        <div>
+            <label for="term">Sesuai Pesanan</label>
+            <input type="checkbox" name="term" id="term" value="benar">
+        </div>
+        <div>
+            <textarea name="catatan" id="catatan" value="catatan" placeholder="tulis catatan" rows="5" cols="30"></textarea>
+        </div>
+        <input type="submit" value="Order">
+    </form>
+
+
 </body>
 </html>
